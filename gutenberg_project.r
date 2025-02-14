@@ -71,7 +71,7 @@ nott.o<- sum(count_bigrams[endsWith(count_bigrams$word, " of"),]$n) - t.o.
 # Sum up all bigrams that whether starts nor ends with "thinkg", " of" and "thinking of"
 nott.noto<- sum(count_bigrams$n) - t.o. - t.noto - nott.o
 
-# Visualizing: creat contingency table 
+# Visualizing: create contingency table 
 freq<- matrix(c(t.o., t.noto, nott.o, nott.noto),ncol = 2, byrow = T)
 
 # Creating a mosaic plot from the contingency table
